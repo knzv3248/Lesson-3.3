@@ -42,6 +42,7 @@ while running:
             if target_x < mouse_x < target_x + target_width and target_y < mouse_y < target_y + target_height:
                 n_target += 1
                 text_hit = "Число попаданий: " + str(n_target)
+                print(text_hit)
                 target_x = random.randint(0, SCREEN_WIDTH - target_width)
                 target_y = random.randint(0, SCREEN_HEIGHT - target_height)
 
